@@ -27,6 +27,11 @@
     statusBar = [[APStatusBar alloc] init];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -40,6 +45,16 @@
     } else {
         return YES;
     }
+}
+
+- (IBAction)setText:(id)sender
+{
+    [statusBar setStatusText:@"Hello, World"];
+}
+
+- (IBAction)hideText:(id)sender
+{
+    [statusBar hideStatusText];
 }
 
 @end

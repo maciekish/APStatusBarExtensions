@@ -14,4 +14,7 @@
 
 @property (nonatomic, strong) APStatusBar *statusBar;
 
+- (IBAction)setText:(id)sender;
+- (IBAction)hideText:(id)sender;
+
 @end

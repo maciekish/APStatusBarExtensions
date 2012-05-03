@@ -8,8 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
-@interface APStatusBar : NSObject
+#import "APStatusBarViewController.h"
+
+@interface APStatusBar : NSObject {
+    CGRect statusBarFrame;
+}
+
+@property (nonatomic, strong) UIWindow *mainWindow;
+@property (nonatomic, strong) UIWindow *statusWindow;
+
+@property (nonatomic, strong) APStatusBarViewController *statusBarViewController;
 
 - (id)init;
+
+- (void)setStatusText:(NSString *)text;
+- (void)hideStatusText;
 
 @end

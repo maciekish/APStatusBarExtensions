@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C143A4CF1552938E007ED974 /* APStatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C143A4CD1552938E007ED974 /* APStatusBarViewController.m */; };
+		C143A4D01552938E007ED974 /* APStatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C143A4CE1552938E007ED974 /* APStatusBarViewController.xib */; };
 		C19D87D11552863B00352DD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19D87D01552863B00352DD2 /* UIKit.framework */; };
 		C19D87D31552863B00352DD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19D87D21552863B00352DD2 /* Foundation.framework */; };
 		C19D87D51552863B00352DD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19D87D41552863B00352DD2 /* CoreGraphics.framework */; };
@@ -14,12 +16,14 @@
 		C19D87DD1552863B00352DD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D87DC1552863B00352DD2 /* main.m */; };
 		C19D87E11552863B00352DD2 /* APAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D87E01552863B00352DD2 /* APAppDelegate.m */; };
 		C19D87E41552863B00352DD2 /* APViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D87E31552863B00352DD2 /* APViewController.m */; };
-		C19D87E71552863B00352DD2 /* APViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19D87E51552863B00352DD2 /* APViewController_iPhone.xib */; };
-		C19D87EA1552863B00352DD2 /* APViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19D87E81552863B00352DD2 /* APViewController_iPad.xib */; };
+		C19D87E71552863B00352DD2 /* APViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C19D87E51552863B00352DD2 /* APViewController.xib */; };
 		C19D87F31552871500352DD2 /* APStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C19D87F21552871500352DD2 /* APStatusBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C143A4CC1552938E007ED974 /* APStatusBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APStatusBarViewController.h; path = APStatusBarExtensions/APStatusBarViewController.h; sourceTree = "<group>"; };
+		C143A4CD1552938E007ED974 /* APStatusBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APStatusBarViewController.m; path = APStatusBarExtensions/APStatusBarViewController.m; sourceTree = "<group>"; };
+		C143A4CE1552938E007ED974 /* APStatusBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = APStatusBarViewController.xib; path = APStatusBarExtensions/APStatusBarViewController.xib; sourceTree = "<group>"; };
 		C19D87CC1552863B00352DD2 /* APStatusBarExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APStatusBarExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19D87D01552863B00352DD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C19D87D21552863B00352DD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,8 +36,7 @@
 		C19D87E01552863B00352DD2 /* APAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APAppDelegate.m; sourceTree = "<group>"; };
 		C19D87E21552863B00352DD2 /* APViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APViewController.h; sourceTree = "<group>"; };
 		C19D87E31552863B00352DD2 /* APViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APViewController.m; sourceTree = "<group>"; };
-		C19D87E61552863B00352DD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/APViewController_iPhone.xib; sourceTree = "<group>"; };
-		C19D87E91552863B00352DD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/APViewController_iPad.xib; sourceTree = "<group>"; };
+		C19D87E61552863B00352DD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/APViewController.xib; sourceTree = "<group>"; };
 		C19D87F11552871500352DD2 /* APStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APStatusBar.h; path = APStatusBarExtensions/APStatusBar.h; sourceTree = "<group>"; };
 		C19D87F21552871500352DD2 /* APStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APStatusBar.m; path = APStatusBarExtensions/APStatusBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,8 +90,7 @@
 				C19D87E01552863B00352DD2 /* APAppDelegate.m */,
 				C19D87E21552863B00352DD2 /* APViewController.h */,
 				C19D87E31552863B00352DD2 /* APViewController.m */,
-				C19D87E51552863B00352DD2 /* APViewController_iPhone.xib */,
-				C19D87E81552863B00352DD2 /* APViewController_iPad.xib */,
+				C19D87E51552863B00352DD2 /* APViewController.xib */,
 				C19D87D71552863B00352DD2 /* Supporting Files */,
 			);
 			path = APStatusBarExtensions;
@@ -110,6 +112,9 @@
 			children = (
 				C19D87F11552871500352DD2 /* APStatusBar.h */,
 				C19D87F21552871500352DD2 /* APStatusBar.m */,
+				C143A4CC1552938E007ED974 /* APStatusBarViewController.h */,
+				C143A4CD1552938E007ED974 /* APStatusBarViewController.m */,
+				C143A4CE1552938E007ED974 /* APStatusBarViewController.xib */,
 			);
 			name = APStatusBarExtensions;
 			sourceTree = "<group>";
@@ -168,8 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C19D87DB1552863B00352DD2 /* InfoPlist.strings in Resources */,
-				C19D87E71552863B00352DD2 /* APViewController_iPhone.xib in Resources */,
-				C19D87EA1552863B00352DD2 /* APViewController_iPad.xib in Resources */,
+				C19D87E71552863B00352DD2 /* APViewController.xib in Resources */,
+				C143A4D01552938E007ED974 /* APStatusBarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +205,7 @@
 				C19D87E11552863B00352DD2 /* APAppDelegate.m in Sources */,
 				C19D87E41552863B00352DD2 /* APViewController.m in Sources */,
 				C19D87F31552871500352DD2 /* APStatusBar.m in Sources */,
+				C143A4CF1552938E007ED974 /* APStatusBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,20 +220,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		C19D87E51552863B00352DD2 /* APViewController_iPhone.xib */ = {
+		C19D87E51552863B00352DD2 /* APViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C19D87E61552863B00352DD2 /* en */,
 			);
-			name = APViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		C19D87E81552863B00352DD2 /* APViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C19D87E91552863B00352DD2 /* en */,
-			);
-			name = APViewController_iPad.xib;
+			name = APViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -323,6 +321,7 @@
 				C19D87EF1552863B00352DD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
