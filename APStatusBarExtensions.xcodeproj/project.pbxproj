@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C143A4CF1552938E007ED974 /* APStatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C143A4CD1552938E007ED974 /* APStatusBarViewController.m */; };
 		C143A4D01552938E007ED974 /* APStatusBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C143A4CE1552938E007ED974 /* APStatusBarViewController.xib */; };
+		C143A4D41552995D007ED974 /* APStatusMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C143A4D31552995D007ED974 /* APStatusMessage.m */; };
 		C19D87D11552863B00352DD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19D87D01552863B00352DD2 /* UIKit.framework */; };
 		C19D87D31552863B00352DD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19D87D21552863B00352DD2 /* Foundation.framework */; };
 		C19D87D51552863B00352DD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19D87D41552863B00352DD2 /* CoreGraphics.framework */; };
@@ -24,6 +25,8 @@
 		C143A4CC1552938E007ED974 /* APStatusBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APStatusBarViewController.h; path = APStatusBarExtensions/APStatusBarViewController.h; sourceTree = "<group>"; };
 		C143A4CD1552938E007ED974 /* APStatusBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APStatusBarViewController.m; path = APStatusBarExtensions/APStatusBarViewController.m; sourceTree = "<group>"; };
 		C143A4CE1552938E007ED974 /* APStatusBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = APStatusBarViewController.xib; path = APStatusBarExtensions/APStatusBarViewController.xib; sourceTree = "<group>"; };
+		C143A4D21552995D007ED974 /* APStatusMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APStatusMessage.h; path = APStatusBarExtensions/APStatusMessage.h; sourceTree = "<group>"; };
+		C143A4D31552995D007ED974 /* APStatusMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APStatusMessage.m; path = APStatusBarExtensions/APStatusMessage.m; sourceTree = "<group>"; };
 		C19D87CC1552863B00352DD2 /* APStatusBarExtensions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APStatusBarExtensions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19D87D01552863B00352DD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C19D87D21552863B00352DD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -115,6 +118,8 @@
 				C143A4CC1552938E007ED974 /* APStatusBarViewController.h */,
 				C143A4CD1552938E007ED974 /* APStatusBarViewController.m */,
 				C143A4CE1552938E007ED974 /* APStatusBarViewController.xib */,
+				C143A4D21552995D007ED974 /* APStatusMessage.h */,
+				C143A4D31552995D007ED974 /* APStatusMessage.m */,
 			);
 			name = APStatusBarExtensions;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 				C19D87E41552863B00352DD2 /* APViewController.m in Sources */,
 				C19D87F31552871500352DD2 /* APStatusBar.m in Sources */,
 				C143A4CF1552938E007ED974 /* APStatusBarViewController.m in Sources */,
+				C143A4D41552995D007ED974 /* APStatusMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

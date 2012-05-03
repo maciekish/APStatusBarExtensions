@@ -10,8 +10,15 @@
 
 #import "APStatusBarViewController.h"
 
+@class APStatusMessage;
+
 @interface APStatusBar : NSObject {
     CGRect statusBarFrame;
+    BOOL queueRunning;
+    
+    APStatusMessage *lastMessageShown;
+    
+    NSMutableArray *queuedStatusMessages;
 }
 
 @property (nonatomic, strong) UIWindow *mainWindow;
@@ -21,7 +28,8 @@
 
 - (id)init;
 
-- (void)setStatusText:(NSString *)text;
-- (void)hideStatusText;
+- (void)queueStatusMessage:(APStatusMessage *)statusMessage;
+- (void)hideStatusMessage:(APStatusMessage *)statusMessage;
+- (void)queueClear;
 
 @end

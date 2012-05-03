@@ -9,6 +9,7 @@
 #import "APViewController.h"
 
 #import "APStatusBar.h"
+#import "APStatusMessage.h"
 
 @interface APViewController ()
 
@@ -47,14 +48,35 @@
     }
 }
 
-- (IBAction)setText:(id)sender
+- (IBAction)shortMessage:(id)sender
 {
-    [statusBar setStatusText:@"Hello, World"];
+    APStatusMessage *statusMessage = [APStatusMessage statusMessageWithMessage:[NSString stringWithFormat:@"Short! %@", [NSDate date]]];
+    lastPostedMessage = statusMessage;
+    [statusBar queueStatusMessage:statusMessage];
 }
 
-- (IBAction)hideText:(id)sender
+- (IBAction)longMessage:(id)sender
 {
-    [statusBar hideStatusText];
+    APStatusMessage *statusMessage = [APStatusMessage statusMessageWithMessage:[NSString stringWithFormat:@"Longer! %@", [NSDate date]] andDuration:5.0];
+    lastPostedMessage = statusMessage;
+    [statusBar queueStatusMessage:statusMessage];
+}
+
+- (IBAction)veryLongMessage:(id)sender
+{
+    APStatusMessage *statusMessage = [APStatusMessage statusMessageWithMessage:[NSString stringWithFormat:@"Very Long! %@", [NSDate date]] andDuration:600.0];
+    lastPostedMessage = statusMessage;
+    [statusBar queueStatusMessage:statusMessage];
+}
+
+- (IBAction)clear:(id)sender
+{
+    [statusBar queueClear];
+}
+
+- (IBAction)hideLast:(id)sender
+{
+    [statusBar hideStatusMessage:lastPostedMessage];
 }
 
 @end

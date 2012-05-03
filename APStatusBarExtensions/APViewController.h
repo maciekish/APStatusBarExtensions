@@ -8,13 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@class APStatusBar;
+@class APStatusBar, APStatusMessage;
 
 @interface APViewController : UIViewController
+{
+    APStatusMessage *lastPostedMessage;
+}
 
 @property (nonatomic, strong) APStatusBar *statusBar;
 
-- (IBAction)setText:(id)sender;
-- (IBAction)hideText:(id)sender;
+- (IBAction)shortMessage:(id)sender;
+- (IBAction)longMessage:(id)sender;
+- (IBAction)veryLongMessage:(id)sender;
+- (IBAction)clear:(id)sender;
+- (IBAction)hideLast:(id)sender;
 
 @end
